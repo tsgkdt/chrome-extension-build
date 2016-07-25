@@ -1,7 +1,7 @@
 FROM ubuntu:latest
 
 RUN apt-get update && \
-    apt-get install -y wget nodejs npm openssl zip vim-common && \
+    apt-get install -y wget nodejs npm openssl zip vim-common git && \
     #nodejs, npm gulp install
     npm cache clean && \
     npm install n -g && \
